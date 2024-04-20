@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 img = cv2.imread('Image_Task_1.png', 0)  
 img = img/255
 
-cv2.imshow('Original Image', img)
+cv2.imshow('Original Image (Gray Scaled)', img)
 
 #Creating Gaussian noise
 x, y = img.shape
@@ -28,7 +28,6 @@ g = img + n
 
 # Plotting the noise added image
 cv2.imshow('Noise added image', g)
-
 
 
 # Implementing and testing the Otsu’s algorithm

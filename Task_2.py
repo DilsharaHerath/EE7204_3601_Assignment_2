@@ -41,9 +41,9 @@ cv2.imshow('Original image',gray_img)
 
 # Define seeds and threshold
 #seed_points = [(162, 162)] 
-#seed_points = [(162, 162)] 
-seed_points = [(80, 80)] 
-threshold = 2 
+#seed_points = [(250, 180)] 
+seed_points = [(320, 270)] 
+threshold = 2
 
 # Perform region growing
 segmented_image = region_growing(gray_img, seed_points, threshold)
