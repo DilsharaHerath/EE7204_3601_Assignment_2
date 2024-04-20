@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Original Image
-img = cv2.imread('Task_1_Image.png', 0)  
+img = cv2.imread('Image_Task_1.png', 0)  
 img = img/255
 
 cv2.imshow('Original Image', img)
@@ -33,8 +33,6 @@ cv2.imshow('Noise added image', g)
 
 # Implementing and testing the Otsu’s algorithm
 
-# Plotting the histogram
-
 # Convert to uint8 for Otsu's thresholding
 g_uint8 = np.uint8(g * 255)
 
@@ -48,20 +46,3 @@ cv2.imshow('Otsu Thresholded Image', otsu_thresholded)
 # Wait for a key press and close the window
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-#Plotting the gaussian noise in 3D plot
-# x, y = np.meshgrid(np.arange(n.shape[1]), np.arange(n.shape[0]))
-
-# # Plotting
-# fig = plt.figure()
-# ax = fig.add_subplot(111, projection='3d')
-# ax.plot_surface(x, y, n, cmap='viridis')
-
-# # Customize plot
-# ax.set_title('3D Plot of Gaussian Noise')
-# ax.set_xlabel('X')
-# ax.set_ylabel('Y')
-# ax.set_zlabel('Noise')
-
-# # Show plot
-# plt.show()
